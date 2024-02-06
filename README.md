@@ -19,21 +19,25 @@ To run this project locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/your-username/task-manager-app.git
+```bash
+git clone https://github.com/Saiprabhu0502/task-manager-app.git
+```
 
 2. Navigate into the project directory:
 
+```bash
 cd task-manager-app
-
+```
 
 3. Install dependencies using npm or yarn:
 
+```bash
 npm install
-
+```
 or
-
+```bash
 yarn install
-
+```
 
 4. Start the development server:
 
