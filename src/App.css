@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+/* App.css */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0; 
+  margin: 0; 
+  padding: 0; 
+  color: #333; 
+} 
+
+header { 
+  background-color: white; 
+  color: green; 
+  text-align: center; 
+  padding: 1rem 0; 
+  box-shadow: 0 4px 18px grey; 
+} 
+
+main { 
+  max-width: 1000px; 
+  margin: 20px auto; 
+  padding: 20px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 18px grey; 
+  border-radius: 15px; 
+} 
+
+.task-form { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+  
+} 
+
+.task-form input, 
+.task-form select, 
+.task-form button { 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  font-size: 16px; 
+  flex: 1; 
+  border-radius: 10px; 
+} 
+
+button { 
+  background-color: green; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+} 
+
+.mark-done { 
+  padding: 10px; 
+  font-size: 16px; 
+  flex: 1; 
+  border-radius: 15px; 
+  background-color: crimson; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+} 
+
+.edit-task{
+  padding: 10px; 
+  margin-left: 20px;
+  font-size: 16px; 
+  flex: 1; 
+  border-radius: 15px; 
+  background-color: blue; 
+  color: white; 
+  border: none; 
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.delete-task{
+  padding: 10px; 
+  margin-left: 20px;
+  font-size: 16px; 
+  flex: 1; 
+  border-radius: 15px; 
+  background-color: rgb(255, 0, 0); 
+  color: white; 
+  border: none; 
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.move-to-overdue{
+  padding: 10px; 
+  margin-left: 20px;
+  font-size: 16px; 
+  flex: 1; 
+  border-radius: 15px; 
+  background-color: rgb(0, 255, 170); 
+  color: white; 
+  border: none; 
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-list { 
+  border: 1px solid #ddd; 
+  padding: 10px; 
+} 
+
+table { 
+  width: 100%; 
+  margin-top: 20px; 
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+} 
+
+table th, 
+table td { 
+  padding: 19px; 
+  border-bottom: 1px solid #ddd; 
+  text-align: left; 
+} 
+
+table th { 
+  background-color: #eee; 
+  color: black; 
+  border-radius: 10px; 
+} 
+
+.completed-task-list { 
+  margin-top: 20px; 
+} 
+
+.completed-task { 
+  padding: 10px; 
+  border: 1px solid crimson; 
+  border-radius: 5px; 
+  background-color: #eaffea; 
+} 
+
+.completed-task h2 { 
+  color: #28a745; 
+} 
+
+h2 { 
+  font-size: 1.3rem; 
+} 
+
+.heading { 
+  padding-bottom: 10px; 
+} 
+
+.cheading { 
+  color: rgb(54, 54, 54); 
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.filters {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filters input[type="text"],
+.filters select {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filters select {
+  padding: 8px 10px;
+}
+
+.filters input[type="text"]::placeholder {
+  color: #999;
+}
+
+.filters select {
+  cursor: pointer;
+}
+
+/* Optional: Style the search button */
+.filters button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
 }
