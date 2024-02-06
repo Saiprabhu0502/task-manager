@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Task Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Task Manager web application built with React. It helps users manage their tasks by allowing them to add, edit, mark as done, delete, and filter tasks based on various criteria such as priority, completion status, and search query. The app also supports managing overdue tasks separately.
 
-## Available Scripts
+Overview
 
-In the project directory, you can run:
+The Task Manager app provides the following features:
 
-### `npm start`
+- Add Task: Users can add new tasks specifying a task name, description, priority, and deadline.
+- Edit Task: Users can edit existing tasks including modifying task details such as name, description, priority, and deadline.
+- Mark Task as Done: Users can mark tasks as done when they are completed.
+- Delete Task: Users can delete tasks individually.
+- Filter Tasks: Users can filter tasks based on priority, completion status, and search query.
+- Manage Overdue Tasks: Overdue tasks are handled separately and can be managed by deleting them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/your-username/task-manager-app.git
 
-### `npm run build`
+2. Navigate into the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd task-manager-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies using npm or yarn:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+or
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+```bash
+npm start
+```
+or
+```bash
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open your browser and visit `http://localhost:3000` to view the Task Manager app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Assumptions
 
-### Code Splitting
+During the development process, the following assumptions were made:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. The app primarily targets individual users for personal task management rather than collaborative task management for teams.
+2. Tasks are stored locally in the browser's localStorage. No backend server is implemented for data storage.
+3. Overdue tasks are treated separately and are managed in a dedicated section.
+4. Date format validation is not implemented. It is assumed that users will input valid dates in the supported format (YYYY-MM-DD).
+5. Priority levels are predefined as "Top Priority," "Middle Priority," and "Less Priority" with no option for custom priority levels.
 
-### Analyzing the Bundle Size
+Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React: JavaScript library for building user interfaces.
+- localStorage: Web storage API used for storing tasks locally in the browser.
+- HTML/CSS: Markup and styling for the user interface.
+- JavaScript (ES6+): Programming language for application logic.
 
-### Making a Progressive Web App
+Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Sai Prabhu(https://github.com/Saiprabhu0502)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
